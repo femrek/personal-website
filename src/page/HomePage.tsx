@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <>
-      <div>Home Page</div>
+      <div className={"px-4"}>Home Page</div>
     </>
   );
 }
