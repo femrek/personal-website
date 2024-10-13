@@ -8,3 +8,9 @@
     @apply text-white;
   }
 }
+
+@layer components {
+  .app-page {
+    @apply px-4 py-4;
+  }
+}

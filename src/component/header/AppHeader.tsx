@@ -8,16 +8,15 @@ function AppHeader() {
       <div className={"text-white font-bold text-2xl px-4 py-4"}>Title</div>
 
       {/* navigation items */}
-      <AppNavItem/>
-      <AppNavItem/>
-      <AppNavItem/>
-      <AppNavItem/>
+      <AppNavItem to={"/"} name={"Home"} />
+      <AppNavItem to={"/contact"} name={"Contact"} />
+      <AppNavItem to={"/portfolio"} name={"Portfolio"} />
 
       {/* spacer */}
       <div className={"flex-1"}></div>
 
       {/* Language Section */}
-      <SelectLanguage languages={['tr', 'en']}/>
+      <SelectLanguage languages={["tr", "en"]} />
     </div>
   );
 }
