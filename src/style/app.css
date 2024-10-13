@@ -716,6 +716,10 @@ body {
   width: 100%;
 }
 
+.min-w-1 {
+  min-width: 0.25rem;
+}
+
 .min-w-12 {
   min-width: 3rem;
 }
@@ -730,10 +734,6 @@ body {
 
 .min-w-9 {
   min-width: 2.25rem;
-}
-
-.min-w-1 {
-  min-width: 0.25rem;
 }
 
 .flex-1 {
@@ -1018,66 +1018,7 @@ body {
   transition-duration: 150ms;
 }
 
-.hover\:bg-blue-500:hover {
+.hover\:bg-teal-600:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.data-\[closed\]\:scale-95[data-closed] {
-  --tw-scale-x: .95;
-  --tw-scale-y: .95;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.data-\[closed\]\:transform[data-closed] {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.data-\[focus\]\:bg-gray-100[data-focus] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.data-\[focus\]\:bg-gray-700[data-focus] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.data-\[focus\]\:text-gray-900[data-focus] {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.data-\[closed\]\:opacity-0[data-closed] {
-  opacity: 0;
-}
-
-.data-\[enter\]\:duration-100[data-enter] {
-  transition-duration: 100ms;
-}
-
-.data-\[leave\]\:duration-75[data-leave] {
-  transition-duration: 75ms;
-}
-
-.data-\[enter\]\:duration-1000[data-enter] {
-  transition-duration: 1000ms;
-}
-
-.data-\[enter\]\:ease-out[data-enter] {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.data-\[leave\]\:ease-in[data-leave] {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }

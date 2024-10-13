@@ -21,7 +21,7 @@ function SelectLanguage({languages}: SelectLanguageProps) {
   }
 
   return (
-    <div className={"hover:bg-gray-800"} onClick={switchLanguage}>
+    <div className={"hover:bg-teal-600"} onClick={switchLanguage}>
       <div className={"bg-transparent content-center mx-4 my-4 flex"}>
         <MdLanguage className={"inline-block flex-1 h-full content-center min-h-9 min-w-9"}/>
         <div className={"inline-block flex-1 content-center text-center font-bold text-xl min-w-9 select-none"}>
