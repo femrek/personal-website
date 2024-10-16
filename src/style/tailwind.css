@@ -10,7 +10,11 @@
 }
 
 @layer components {
+  .app-header {
+    @apply max-w-screen-md mx-auto;
+  }
+  
   .app-page {
-    @apply px-4 py-4;
+    @apply px-4 my-4 max-w-screen-md mx-auto;
   }
 }

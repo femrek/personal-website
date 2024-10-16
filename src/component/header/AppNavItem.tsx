@@ -7,10 +7,8 @@ interface AppNavItemProps {
 
 function AppNavItem({ to, name }: AppNavItemProps) {
   return (
-    <NavLink to={to} className="nav-link">
-      <div className={"hover:bg-teal-600 px-2 h-full content-center"}>
-        {name}
-      </div>
+    <NavLink to={to} className={"hover:bg-teal-600 px-2 h-full content-center"}>
+      {name}
     </NavLink>
   );
 }

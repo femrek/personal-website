@@ -20,7 +20,7 @@ function SelectLanguage({ languages }: SelectLanguageProps) {
   };
 
   return (
-    <div className={"hover:bg-teal-600"} onClick={switchLanguage}>
+    <button onClick={switchLanguage}>
       <div className={"bg-transparent content-center mx-4 my-4 flex"}>
         {/* Language icon */}
         <div className={"inline-block flex-1 content-center"}>
@@ -36,7 +36,7 @@ function SelectLanguage({ languages }: SelectLanguageProps) {
           {langNames[i]}
         </div>
       </div>
-    </div>
+    </button>
   );
 }
 
