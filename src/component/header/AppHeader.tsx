@@ -24,7 +24,7 @@ function AppHeader() {
           {/* Hamburger Menu Button */}
           <div className={"h-full items-center justify-center flex"}>
             <button
-              className={"h-full px-4 content-center"}
+              className={"h-full pr-4 content-center"}
               onClick={toggleMenu}
             >
               <MdMenu className={"size-9"} />
@@ -59,7 +59,7 @@ function AppHeader() {
         </div>
 
         {/* The title */}
-        <div className={"text-white font-bold text-2xl py-4 sm:px-4"}>
+        <div className={"text-white font-bold text-2xl py-4 sm:pr-4"}>
           Title
         </div>
 
