@@ -3,16 +3,20 @@ import {
   getHomeData,
   HomePageData,
 } from "../network/repository/home-repository.ts";
+import { useLocalizationContext } from "../context/localization/localization-context.ts";
 
 function HomePage() {
   const [pageData, setPageData] = useState<HomePageData | null>(null);
+  const { langData } = useLocalizationContext();
 
-  // Fetch the home page data when the component mounts
   useEffect(() => {
-    getHomeData().then((responseJson) => {
-      setPageData(responseJson);
-    });
-  }, []);
+    // If the language is changed or initialized, fetch the home page data
+    if (langData?.currentLang?.code) {
+      getHomeData(langData.currentLang.code).then((responseJson) => {
+        setPageData(responseJson);
+      });
+    }
+  }, [langData?.currentLang?.code]);
 
   return (
     <div>

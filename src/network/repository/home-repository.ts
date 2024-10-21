@@ -1,5 +1,9 @@
 import { get } from "../manager/network-manager.ts";
-import ApiUrls from "../../constant/api-urls.ts";
+import {
+  apiUrlsHost,
+  localizedApiUrl,
+  localizedApiUrlQueues,
+} from "../../constant/api-urls.ts";
 
 export interface HomePageData {
   title: string;
@@ -9,9 +13,10 @@ export interface HomePageData {
 /**
  * Get the home page data in form of HomePageData
  */
-export async function getHomeData(): Promise<HomePageData> {
+export async function getHomeData(langCode: string): Promise<HomePageData> {
   const response = await get({
-    queue: ApiUrls.homePage,
+    host: apiUrlsHost,
+    queue: localizedApiUrl(localizedApiUrlQueues.homePage, langCode),
   });
 
   return response as HomePageData;

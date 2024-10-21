@@ -1,26 +1,20 @@
 import { MdLanguage } from "react-icons/md";
-import { useState } from "react";
+import localizationActionTypes from "../../reducer/localization/localization-action-types.ts";
+import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 
-interface SelectLanguageProps {
-  languages: string[];
-}
+function SelectLanguage() {
+  const { langData, langDispatch } = useLocalizationContext();
 
-function SelectLanguage({ languages }: SelectLanguageProps) {
-  const [i, setI] = useState(0);
-
-  // turn the language codes to uppercase to display them
-  const langNames: string[] = [];
-  languages.map((language) => {
-    langNames.push(language.toUpperCase());
-  });
-
-  // switches the next language in the list
-  const switchLanguage = () => {
-    setI((i + 1) % languages.length);
-  };
+  if (!langData?.currentLang?.shortName) {
+    return null;
+  }
 
   return (
-    <button onClick={switchLanguage}>
+    <button
+      onClick={() =>
+        langDispatch({ type: localizationActionTypes.toggleLanguage })
+      }
+    >
       <div className={"bg-transparent content-center mx-4 my-4 flex"}>
         {/* Language icon */}
         <div className={"inline-block flex-1 content-center"}>
@@ -33,7 +27,7 @@ function SelectLanguage({ languages }: SelectLanguageProps) {
             "inline-block flex-1 content-center text-center font-bold text-xl min-w-9 select-none"
           }
         >
-          {langNames[i]}
+          {langData.currentLang.shortName}
         </div>
       </div>
     </button>
