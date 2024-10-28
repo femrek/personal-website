@@ -19,18 +19,16 @@ function HomePage() {
   }, [langData?.currentLang?.code]);
 
   return (
-    <div>
-      <br />
-      <div className={"text-2xl"}>{pageData?.title ?? ""}</div>
-      <br />
+    <>
+      <div className={"app-title"}>{pageData?.title ?? ""}</div>
 
-      {pageData?.content.map((content, index) => (
+      {pageData?.content.map((p, index) => (
         <div key={index}>
-          <p>{content}</p>
+          <p>{p}</p>
           <br />
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

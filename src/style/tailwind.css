@@ -17,4 +17,14 @@
   .app-page {
     @apply max-w-screen-md mx-4 md:mx-auto;
   }
+  
+  .app-title {
+    @apply text-2xl font-bold my-4;
+  }
+  
+}
+
+html {
+  /* show scroll bar always. dynamic scroll bar visibility may lead to bad ui when routing */
+  overflow-y: scroll;
 }
