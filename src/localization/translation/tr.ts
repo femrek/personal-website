@@ -13,6 +13,11 @@ const tr: LocalizationResource = {
     footer: {
       github: "Kaynak Kodu GitHub'da",
     },
+    portfolioPage: {
+      imageViewer: {
+        loading: "Yükleniyor...",
+      },
+    },
   },
 };
 

@@ -13,6 +13,11 @@ const en: LocalizationResource = {
     footer: {
       github: "Open Source on GitHub",
     },
+    portfolioPage: {
+      imageViewer: {
+        loading: "Loading...",
+      },
+    },
   },
 };
 
