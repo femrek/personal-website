@@ -17,6 +17,11 @@ export interface LocalizationResource extends ResourceLanguage {
     footer: {
       github: string;
     };
+    portfolioPage: {
+      imageViewer: {
+        loading: string;
+      };
+    };
   };
 }
 
