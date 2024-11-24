@@ -1,8 +1,34 @@
+import { useEffect, useState } from "react";
+import { useLocalizationContext } from "../context/localization/localization-context.ts";
+import {
+  ContactPageData,
+  getContactPageData,
+} from "../network/repository/contact-repository.ts";
+import ContactEntry from "../component/contact/ContactEntry.tsx";
+
 function ContactPage() {
+  const [pageData, setPageData] = useState<ContactPageData | null>(null);
+  const { langData } = useLocalizationContext();
+
+  useEffect(() => {
+    if (langData?.currentLang?.code) {
+      getContactPageData(langData.currentLang.code).then((responseJson) => {
+        setPageData(responseJson);
+      });
+    }
+  }, [langData?.currentLang?.code]);
+
+  if (!pageData) {
+    return null;
+  }
+
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <>
+      <div className={"app-title"}>{pageData.title}</div>
+      {pageData.content.map((contact, index) => (
+        <ContactEntry data={contact} key={index} />
+      ))}
+    </>
   );
 }
 

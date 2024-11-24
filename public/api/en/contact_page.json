@@ -1,0 +1,13 @@
+{
+  "title": "Contact",
+  "content": [
+    {
+      "title": "Email",
+      "value": "example@example.com"
+    },
+    {
+      "title": "Matrix",
+      "value": "@example:matrix.org"
+    }
+  ]
+}

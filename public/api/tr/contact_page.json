@@ -1,0 +1,13 @@
+{
+  "title": "İletişim",
+  "content": [
+    {
+      "title": "E-Posta",
+      "value": "example@example.com"
+    },
+    {
+      "title": "Matrix",
+      "value": "@example:matrix.org"
+    }
+  ]
+}

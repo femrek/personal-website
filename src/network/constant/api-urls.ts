@@ -19,6 +19,7 @@ const localizedApiUrlQueues = {
   homePage: "/api/{langCode}/home_page.json",
   portfoliosPage: "/api/{langCode}/portfolios_page.json",
   portfolioPage: "/api/{langCode}/portfolios/{slug}.json",
+  contactPage: "/api/{langCode}/contact_page.json",
 };
 
 /**
