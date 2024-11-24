@@ -6,6 +6,7 @@ import AppNavItem from "./AppNavItem.tsx";
 import AppNavMenuItem from "./AppNavMenuItem.tsx";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
+import locKeys from "../../localization/locale-keys.ts";
 
 function AppHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,17 +51,17 @@ function AppHeader() {
           >
             <AppNavMenuItem
               to={"/"}
-              name={loc.t("header.nav.home")}
+              name={loc.t(locKeys.header.nav.home)}
               onClick={onNavMenuItemClick}
             />
             <AppNavMenuItem
               to={"/portfolio"}
-              name={loc.t("header.nav.portfolio")}
+              name={loc.t(locKeys.header.nav.portfolio)}
               onClick={onNavMenuItemClick}
             />
             <AppNavMenuItem
               to={"/contact"}
-              name={loc.t("header.nav.contact")}
+              name={loc.t(locKeys.header.nav.contact)}
               onClick={onNavMenuItemClick}
             />
           </div>
@@ -68,7 +69,7 @@ function AppHeader() {
 
         {/* The title */}
         <div className={"text-white font-bold text-2xl py-4 sm:pr-4"}>
-          {loc.t("appTitle")}
+          {loc.t(locKeys.appTitle)}
         </div>
 
         {/* Spacer only when the nav buttons are not in the header */}
@@ -76,9 +77,15 @@ function AppHeader() {
 
         {/* navigation items (md<=) */}
         <div className={"hidden flex-1 sm:visible sm:flex"}>
-          <AppNavItem to={"/"} name={loc.t("header.nav.home")} />
-          <AppNavItem to={"/portfolio"} name={loc.t("header.nav.portfolio")} />
-          <AppNavItem to={"/contact"} name={loc.t("header.nav.contact")} />
+          <AppNavItem to={"/"} name={loc.t(locKeys.header.nav.home)} />
+          <AppNavItem
+            to={"/portfolio"}
+            name={loc.t(locKeys.header.nav.portfolio)}
+          />
+          <AppNavItem
+            to={"/contact"}
+            name={loc.t(locKeys.header.nav.contact)}
+          />
         </div>
 
         {/* Language Section */}

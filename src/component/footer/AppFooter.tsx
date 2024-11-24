@@ -2,6 +2,7 @@ import gh from "/github-mark-white.svg";
 import { NavLink } from "react-router-dom";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
+import locKeys from "../../localization/locale-keys.ts";
 
 function AppFooter() {
   const { langData } = useLocalizationContext();
@@ -23,7 +24,7 @@ function AppFooter() {
           <div className={"flex p-4"}>
             <img className={"size-8"} src={gh} alt={"GH"} />
             <div className={"px-2 content-center"}>
-              {loc.t("footer.github")}
+              {loc.t(locKeys.footer.github)}
             </div>
           </div>
         </NavLink>

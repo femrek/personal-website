@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
+import locKeys from "../../localization/locale-keys.ts";
 
 interface PortfolioImageViewerProps {
   imageUrls: string[];
@@ -101,7 +102,7 @@ function CurrentImage({ imageUrl }: { imageUrl: string }) {
           <div
             className={"animate-pulse bg-gray-300 bg-opacity-20 rounded p-4"}
           >
-            {loc.t("portfolioPage.imageViewer.loading")}
+            {loc.t(locKeys.portfolioPage.imageViewer.loading)}
           </div>
         </div>
         <div className={"flex-1"} />
