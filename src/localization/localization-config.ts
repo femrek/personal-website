@@ -21,6 +21,11 @@ export interface LocalizationResource extends ResourceLanguage {
         loading: string;
       };
     };
+    contactPage: {
+      contactEntry: {
+        copied: string;
+      };
+    };
   };
 }
 

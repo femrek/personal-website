@@ -17,6 +17,11 @@ const localeKeys: LocalizationResource = {
         loading: "portfolioPage.imageViewer.loading",
       },
     },
+    contactPage: {
+      contactEntry: {
+        copied: "contactPage.contactEntry.copied",
+      },
+    },
   },
 };
 

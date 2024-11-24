@@ -17,6 +17,11 @@ const en: LocalizationResource = {
         loading: "Loading...",
       },
     },
+    contactPage: {
+      contactEntry: {
+        copied: "Copied!",
+      },
+    },
   },
 };
 

@@ -17,6 +17,11 @@ const tr: LocalizationResource = {
         loading: "Yükleniyor...",
       },
     },
+    contactPage: {
+      contactEntry: {
+        copied: "Kopyalandı!",
+      },
+    },
   },
 };
 
