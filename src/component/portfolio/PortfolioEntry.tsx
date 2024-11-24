@@ -1,5 +1,6 @@
 import { PortfolioPreviewData } from "../../network/repository/portfolio-repository.ts";
 import { Link } from "react-router-dom";
+import { getImageUrl } from "../../network/constant/image-urls.ts";
 
 interface PortfolioEntryProps {
   data: PortfolioPreviewData;
@@ -24,7 +25,7 @@ function PortfolioEntryFullSize({ data }: PortfolioEntryProps) {
     <div className={"flex bg-black rounded-2xl mb-8"}>
       <img
         className={"aspect-square object-cover rounded-l-2xl size-64"}
-        src={data.image}
+        src={getImageUrl(data.image)}
         alt={"Preview Image"}
       />
       <div className={"flex-auto"}>
@@ -43,7 +44,7 @@ function PortfolioEntryCompact({ data }: PortfolioEntryProps) {
       <div className={"w-full h-64 rounded-t-2xl bg-gray-700"}>
         <img
           className={"w-full h-64 rounded-t-2xl"}
-          src={data.image}
+          src={getImageUrl(data.image)}
           alt={"Preview Image"}
         />
       </div>

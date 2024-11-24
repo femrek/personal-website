@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
 import locKeys from "../../localization/locale-keys.ts";
+import { getImageUrl } from "../../network/constant/image-urls.ts";
 
 function AppFooter() {
   const { langData } = useLocalizationContext();
@@ -22,7 +23,7 @@ function AppFooter() {
           rel="noopener noreferrer"
         >
           <div className={"flex p-4"}>
-            <img className={"size-8"} src={gh} alt={"GH"} />
+            <img className={"size-8"} src={getImageUrl(gh)} alt={"GH"} />
             <div className={"px-2 content-center"}>
               {loc.t(locKeys.footer.github)}
             </div>

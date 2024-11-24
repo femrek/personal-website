@@ -6,10 +6,10 @@
     "Portfolio 2 Description"
   ],
   "images": [
-    "https://placehold.co/600x400?text=Hello+World+1",
-    "https://placehold.co/600x400?text=Hello+World+2",
-    "https://placehold.co/600x400?text=Hello+World+3",
-    "https://placehold.co/600x400?text=Hello+World+4",
-    "https://placehold.co/600x400?text=Hello+World+5"
+    "/api/static/hw1.png",
+    "/api/static/hw2.png",
+    "/api/static/hw3.png",
+    "/api/static/hw4.png",
+    "/api/static/hw5.png"
   ]
 }
