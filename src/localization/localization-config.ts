@@ -9,7 +9,6 @@ export interface LocalizationResource extends ResourceLanguage {
     appTitle: string;
     header: {
       nav: {
-        home: string;
         portfolio: string;
         contact: string;
       };

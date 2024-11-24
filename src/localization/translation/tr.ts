@@ -5,7 +5,6 @@ const tr: LocalizationResource = {
     appTitle: "Başlık.",
     header: {
       nav: {
-        home: "Anasayfa",
         portfolio: "Portföy",
         contact: "İletişim",
       },

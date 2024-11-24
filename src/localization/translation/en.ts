@@ -5,7 +5,6 @@ const en: LocalizationResource = {
     appTitle: "Title.",
     header: {
       nav: {
-        home: "Home",
         portfolio: "Portfolio",
         contact: "Contact",
       },

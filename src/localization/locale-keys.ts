@@ -5,7 +5,6 @@ const localeKeys: LocalizationResource = {
     appTitle: "appTitle",
     header: {
       nav: {
-        home: "header.nav.home",
         portfolio: "header.nav.portfolio",
         contact: "header.nav.contact",
       },
