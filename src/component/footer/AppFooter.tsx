@@ -1,4 +1,4 @@
-import gh from "/github-mark-white.svg";
+import gh from "/icons/github-mark-white.svg";
 import { NavLink } from "react-router-dom";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
