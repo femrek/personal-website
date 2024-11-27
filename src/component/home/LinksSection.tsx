@@ -1,6 +1,7 @@
 import { HomePageLinksData } from "../../network/repository/home-repository.ts";
 import { getImageUrl } from "../../network/constant/image-urls.ts";
 import { NavLink } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
 
 interface LinkSectionProps {
   data: HomePageLinksData[];
@@ -23,12 +24,15 @@ interface LinkEntryProps {
 function LinkEntry({ link }: LinkEntryProps) {
   return (
     <div className={"p-2"}>
+      <Tooltip id={link.url} />
       <NavLink
         key={link.url}
         to={link.url}
         target="_blank"
         rel="noreferrer"
         className={"m-0"}
+        data-tooltip-id={link.url}
+        data-tooltip-content={link.label}
       >
         <div
           className={"rounded-2xl shadow shadow-black p-2 size-16 bg-black"}
