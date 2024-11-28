@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
 import locKeys from "../../localization/locale-keys.ts";
-import { getImageUrl } from "../../network/constant/image-urls.ts";
+import { getImageUrl } from "../../network/constant/api-urls.ts";
 
 function AppFooter() {
   const { langData } = useLocalizationContext();

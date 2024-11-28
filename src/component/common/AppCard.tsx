@@ -1,4 +1,4 @@
-import { getImageUrl } from "../../network/constant/image-urls.ts";
+import { getImageUrl } from "../../network/constant/api-urls.ts";
 
 interface AppCardProps {
   title: string;

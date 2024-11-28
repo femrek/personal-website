@@ -1,5 +1,5 @@
 import { HomePageLinksData } from "../../network/repository/home-repository.ts";
-import { getImageUrl } from "../../network/constant/image-urls.ts";
+import { getImageUrl } from "../../network/constant/api-urls.ts";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 

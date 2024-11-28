@@ -4,7 +4,7 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
 import locKeys from "../../localization/locale-keys.ts";
-import { getImageUrl } from "../../network/constant/image-urls.ts";
+import { getImageUrl } from "../../network/constant/api-urls.ts";
 
 interface PortfolioImageViewerProps {
   imageUrls: string[];
