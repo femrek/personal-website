@@ -8,25 +8,25 @@
     {
       "label": "GitHub",
       "icon": "/icons/github-mark-white.svg",
-      "url": "https://github.com/femrek",
+      "url": "https://github.com/<username>",
       "backgroundColor": "#000000"
     },
     {
       "label": "Google Play",
       "icon": "/icons/googleplay-icon.png",
-      "url": "https://play.google.com/store/apps/dev?id=7986243585950801287",
+      "url": "https://play.google.com/store/apps/dev?id=<developer_id>",
       "backgroundColor": "#ffffff"
     },
     {
       "label": "OpenGameArt",
       "icon": "/icons/opengameart-icon.png",
-      "url": "https://opengameart.org/users/femrek",
+      "url": "https://opengameart.org/users/<username>",
       "backgroundColor": "#000000"
     },
     {
       "label": "LinkedIn",
       "icon": "/icons/linkedin-icon.png",
-      "url": "https://www.linkedin.com/in/femrek/",
+      "url": "https://www.linkedin.com/in/<username>/",
       "backgroundColor": "#0077B5"
     }
   ],

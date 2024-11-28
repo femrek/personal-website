@@ -1,9 +1,8 @@
 {
   "title": "Portfolio 3",
   "description": [
-    "Portfolio 3 Description",
-    "Portfolio 3 Description",
-    "Portfolio 3 Description"
+    "Portfolio 3 Description Paragraph 1",
+    "Portfolio 3 Description Paragraph 2"
   ],
   "images": [
     "/api/static/hw1.png",
