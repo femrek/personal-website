@@ -2,7 +2,7 @@ import { LocalizationResource } from "../localization-config.ts";
 
 const tr: LocalizationResource = {
   translation: {
-    appTitle: "Başlık.",
+    appTitle: import.meta.env.VITE_TITLE,
     header: {
       nav: {
         portfolio: "Portföy",
