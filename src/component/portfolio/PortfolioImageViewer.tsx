@@ -11,12 +11,9 @@ interface PortfolioImageViewerProps {
 }
 
 function PortfolioImageViewer({ imageUrls }: PortfolioImageViewerProps) {
-  console.assert(
-    imageUrls.length > 0,
-    "PortfolioImageViewer: imageUrls should not be empty",
-  );
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  if (imageUrls.length <= 0) return null;
 
   const onArrowClick = (directionLeft: boolean) => {
     setCurrentImageIndex(
