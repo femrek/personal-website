@@ -32,7 +32,9 @@ function AppCard(props: AppCardProps) {
 
 function AppCardFullSize({ title, image, description }: AppCardProps) {
   return (
-    <div className={"flex bg-black rounded-2xl mb-8 shadow shadow-black"}>
+    <div
+      className={"flex bg-black rounded-2xl mb-8 w-full shadow shadow-black"}
+    >
       {image && (
         <img
           className={"aspect-square object-cover rounded-l-2xl size-64"}
