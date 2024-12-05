@@ -1,69 +1,80 @@
 # Personal Website
 
+Basic website template for personal use. Presenting a home page, portfolio page, and contact page. Allows to fetch data
+from another host.
+
+No stable version yet. Any major changes can be made.
+
+## Index
+
+- [Features](#features)
+- [Run with Sample Data](#run-with-sample-data)
+    - [To run the app in development mode](#to-run-the-app-in-development-mode)
+    - [To run in production mode](#to-run-in-production-mode)
+- [Environment Setup](#environment-setup)
+- [Installation](#installation)
+- [Used Technologies](#used-technologies)
+- [License](#license)
+
+## Features
+
+- <strong>Localization:</strong>
+  The app supports localized content. By default, it supports English and Turkish.
+
+## Run with Sample Data
+
+The app includes dummy data in `public` folder. If, the `VITE_API_HOST` is not set in the environment file, the app will
+use the dummy data.
+
+```bash
+git clone https://github.com/femrek/personal-website.git
+cd personal-website
+npm install
+````
+
+### To run the app in development mode:
+
+```bash
+npm run dev
+```
+
+### To run in production mode:
+
+#### Install `serve` package globally, if not installed:
+
+```bash
+npm install -g serve
+```
+
+#### Build and serve the app
+
+```bash
+npm run build
+serve dist
+```
+
 ## Environment Setup
 
-### `.env.developement` file for debug run
+Example `.env.developement.local` file for `npm run dev` or `.env.production.local` file for `npm run build`
 
 ```
 VITE_API_HOST=http://localhost:5173
+VITE_TITLE=Title
 ```
 
-### `.env.production` file for production build
+## Installation
 
-```
-VITE_API_HOST=http://localhost:3000
-```
+Will be added.
 
-# React + TypeScript + Vite
+## Used Technologies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [React i18next](https://react.i18next.com/)
 
-Currently, two official plugins are available:
+## License
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or
-  `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: {react: {version: '18.3'}},
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Will be added.
