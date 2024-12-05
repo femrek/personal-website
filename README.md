@@ -14,6 +14,11 @@ No stable version yet. Any major changes can be made.
 - [Installation](#installation)
 - [License](#license)
 
+## Screen Shots
+
+<img width="580" alt="Screenshot 2024-12-05 at 17 37 39" src="https://github.com/user-attachments/assets/d54ec016-cec6-477f-8d05-538e0ca4eb1f">
+<img width="180" alt="Screenshot 2024-12-05 at 17 37 30" src="https://github.com/user-attachments/assets/542e6ff2-5f7a-446f-8c70-2fe7ec4a34b2">
+
 ## Features
 
 - <strong>Localization:</strong>
