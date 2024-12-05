@@ -5,6 +5,7 @@ from another host.
 
 No stable version yet. Any major changes can be made.
 
+- [Screen Shots](#screen-shots)
 - [Features](#features)
 - [Used Technologies](#used-technologies)
 - [Run with Sample Data](#run-with-sample-data)
