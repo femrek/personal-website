@@ -71,8 +71,16 @@ serve dist
 Example `.env.developement.local` file for `npm run dev` or `.env.production.local` file for `npm run build`
 
 ```
-VITE_API_HOST=http://localhost:5173
-VITE_TITLE=Title
+VITE_WEBSITE_API_HOST=http://localhost:3000
+VITE_WEBSITE_TITLE=Title
+```
+
+Or, you can set the environment variables in the terminal before running the app. (With no VITE_ prefix)
+
+```bash
+WEBSITE_API_HOST=http://localhost:3000 
+WEBSITE_TITLE=Title
+npm run dev
 ```
 
 ## Installation

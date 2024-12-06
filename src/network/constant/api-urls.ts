@@ -10,7 +10,7 @@ export interface ApiUrlParams {
 /**
  * The host address of the API URLs
  */
-const apiUrlsHost = import.meta.env.VITE_API_HOST ?? findHost();
+const apiUrlsHost = import.meta.env.VITE_WEBSITE_API_HOST ?? findHost();
 
 /**
  * The localized API URLs
