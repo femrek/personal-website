@@ -28,7 +28,7 @@ function HomePage() {
       {/* Content */}
       {pageData?.content.map((p, index) => (
         <div key={index}>
-          <div className={"text-xl"}>{p}</div>
+          <div className={"text-xl text-center"}>{p}</div>
 
           {/* Insert a blank line only if there is another paragraph following */}
           {index == pageData?.content.length - 1 || <br />}
