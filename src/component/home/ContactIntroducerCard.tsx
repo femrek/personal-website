@@ -1,6 +1,6 @@
-import { HomePageContactIntroducerData } from "../../network/repository/home-repository.ts";
 import AppCard from "../common/AppCard.tsx";
 import { Link } from "react-router-dom";
+import { HomePageContactIntroducerData } from "../../data/api-data-types";
 
 interface ContactIntroducerCardProps {
   data: HomePageContactIntroducerData;

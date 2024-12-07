@@ -1,4 +1,4 @@
-import { ContactEntryData } from "../../network/repository/contact-repository.ts";
+import { ContactEntryData } from "../../data/api-data-types";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";

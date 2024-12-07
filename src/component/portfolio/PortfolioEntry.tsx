@@ -1,6 +1,6 @@
-import { PortfolioPreviewData } from "../../network/repository/portfolio-repository.ts";
 import { Link } from "react-router-dom";
 import AppCard from "../common/AppCard.tsx";
+import { PortfolioPreviewData } from "../../data/api-data-types";
 
 interface PortfolioEntryProps {
   data: PortfolioPreviewData;

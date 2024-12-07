@@ -1,10 +1,8 @@
 import PortfolioEntry from "../../component/portfolio/PortfolioEntry.tsx";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import { useEffect, useState } from "react";
-import {
-  getPortfoliosPageData,
-  PortfoliosPageData,
-} from "../../network/repository/portfolio-repository.ts";
+import { getPortfoliosPageData } from "../../network/repository/portfolio-repository.ts";
+import { PortfoliosPageData } from "../../data/api-data-types";
 
 function PortfoliosPage() {
   const [pageData, setPageData] = useState<PortfoliosPageData | null>(null);

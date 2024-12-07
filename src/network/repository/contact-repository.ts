@@ -4,16 +4,7 @@ import {
   getApiUrl,
   localizedApiUrlQueues,
 } from "../constant/api-urls.ts";
-
-export interface ContactPageData {
-  title: string;
-  content: ContactEntryData[];
-}
-
-export interface ContactEntryData {
-  title: string;
-  value: string;
-}
+import { ContactPageData } from "../../data/api-data-types";
 
 /**
  * Get the contact page data in form of ContactPageData

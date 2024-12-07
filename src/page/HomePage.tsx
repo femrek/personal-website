@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import {
-  getHomeData,
-  HomePageData,
-} from "../network/repository/home-repository.ts";
+import { getHomeData } from "../network/repository/home-repository.ts";
 import { useLocalizationContext } from "../context/localization/localization-context.ts";
 import PortfolioIntroducerCard from "../component/home/PortfolioIntroducerCard.tsx";
 import ContactIntroducerCard from "../component/home/ContactIntroducerCard.tsx";
 import LinksSection from "../component/home/LinksSection.tsx";
+import { HomePageData } from "../data/api-data-types";
 
 function HomePage() {
   const [pageData, setPageData] = useState<HomePageData | null>(null);

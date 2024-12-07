@@ -1,11 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import {
-  getPortfolioPageData,
-  PortfolioPageData,
-} from "../../network/repository/portfolio-repository.ts";
+import { getPortfolioPageData } from "../../network/repository/portfolio-repository.ts";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import PortfolioImageViewer from "../../component/portfolio/PortfolioImageViewer.tsx";
+import { PortfolioPageData } from "../../data/api-data-types";
 
 function PortfolioPage() {
   const { portfolioSlug } = useParams();

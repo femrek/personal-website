@@ -1,6 +1,6 @@
 import AppCard from "../common/AppCard.tsx";
-import { HomePagePortfolioIntroducerData } from "../../network/repository/home-repository.ts";
 import { Link } from "react-router-dom";
+import { HomePagePortfolioIntroducerData } from "../../data/api-data-types";
 
 interface PortfolioIntroducerCardProps {
   data: HomePagePortfolioIntroducerData;

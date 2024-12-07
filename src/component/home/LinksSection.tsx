@@ -1,7 +1,7 @@
-import { HomePageLinksData } from "../../network/repository/home-repository.ts";
 import { getImageUrl } from "../../network/constant/api-urls.ts";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
+import { HomePageLinksData } from "../../data/api-data-types";
 
 interface LinkSectionProps {
   data: HomePageLinksData[];

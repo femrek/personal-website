@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLocalizationContext } from "../context/localization/localization-context.ts";
-import {
-  ContactPageData,
-  getContactPageData,
-} from "../network/repository/contact-repository.ts";
+import { getContactPageData } from "../network/repository/contact-repository.ts";
 import ContactEntry from "../component/contact/ContactEntry.tsx";
+import { ContactPageData } from "../data/api-data-types";
 
 function ContactPage() {
   const [pageData, setPageData] = useState<ContactPageData | null>(null);

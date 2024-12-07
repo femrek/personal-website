@@ -5,24 +5,10 @@ import {
   localizedApiUrlQueues,
 } from "../constant/api-urls.ts";
 import { get } from "../manager/network-manager.ts";
-
-export interface PortfolioPreviewData {
-  title: string;
-  description: string;
-  image: string;
-  slug: string;
-}
-
-export interface PortfoliosPageData {
-  title: string;
-  portfolios: PortfolioPreviewData[];
-}
-
-export interface PortfolioPageData {
-  title: string;
-  description: string[];
-  images: string[];
-}
+import {
+  PortfolioPageData,
+  PortfoliosPageData,
+} from "../../data/api-data-types";
 
 interface PortfolioParams extends ApiUrlParams {
   slug: string;
