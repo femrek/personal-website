@@ -1,27 +1,13 @@
-import { getImageUrl } from "../../network/constant/api-urls.ts";
-import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
-import { HomePageLinksData } from "../../data/api-data-types";
-
-interface LinkSectionProps {
-  data: HomePageLinksData[];
-}
-
-function LinksSection({ data }: LinkSectionProps) {
-  return (
-    <div className={"flex flex-wrap justify-evenly my-4"}>
-      {data.map((link) => (
-        <LinkEntry key={link.url} link={link} />
-      ))}
-    </div>
-  );
-}
+import { NavLink } from "react-router-dom";
+import { getImageUrl } from "../../network/constant/api-urls.ts";
+import { LinkBoxData } from "../../data/api-data-types";
 
 interface LinkEntryProps {
-  link: HomePageLinksData;
+  link: LinkBoxData;
 }
 
-function LinkEntry({ link }: LinkEntryProps) {
+function AppLinkBoxEntity({ link }: LinkEntryProps) {
   return (
     <div className={"p-2"}>
       <Tooltip id={link.url} />
@@ -49,4 +35,4 @@ function LinkEntry({ link }: LinkEntryProps) {
   );
 }
 
-export default LinksSection;
+export default AppLinkBoxEntity;

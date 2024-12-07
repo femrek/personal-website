@@ -4,6 +4,8 @@ import { getPortfolioPageData } from "../../network/repository/portfolio-reposit
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import PortfolioImageViewer from "../../component/portfolio/PortfolioImageViewer.tsx";
 import { PortfolioPageData } from "../../data/api-data-types";
+import AppTitleAndParagraphComponent from "../../component/common/AppTitleAndParagraphComponent.tsx";
+import AppLinkBoxesSection from "../../component/common/AppLinkBoxesSection.tsx";
 
 function PortfolioPage() {
   const { portfolioSlug } = useParams();
@@ -28,10 +30,15 @@ function PortfolioPage() {
     <>
       <div className={"app-title"}>{pageData.title}</div>
 
+      {pageData.links && <AppLinkBoxesSection data={pageData.links} />}
+
       {pageData.description.map((desc, index) => (
         <div key={index}>
-          <p>{desc}</p>
-          <br />
+          {typeof desc === "string" ? (
+            <p className={"pb-2"}>{desc}</p>
+          ) : (
+            <AppTitleAndParagraphComponent data={desc} />
+          )}
         </div>
       ))}
 

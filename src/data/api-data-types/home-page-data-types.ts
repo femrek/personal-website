@@ -1,16 +1,11 @@
+import { LinkBoxData } from "./common/link-box-data.ts";
+
 export interface HomePageData {
   title: string;
   content: string[];
-  links: HomePageLinksData[];
+  links: LinkBoxData[];
   portfolioIntroducer: HomePagePortfolioIntroducerData;
   contactIntroducer: HomePageContactIntroducerData;
-}
-
-export interface HomePageLinksData {
-  label: string;
-  url: string;
-  icon: string;
-  backgroundColor?: string;
 }
 
 export interface HomePagePortfolioIntroducerData {
