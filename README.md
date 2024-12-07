@@ -28,11 +28,12 @@ No stable version yet. Any major changes can be made.
 ## Used Technologies
 
 - [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
+- [Vite](https://vite.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [React Router](https://reactrouter.com/)
+- [React Router Dom](https://reactrouter.com/)
 - [React i18next](https://react.i18next.com/)
+- [Material Icons](https://material.io/resources/icons/)
 
 ## Run with Sample Data
 
