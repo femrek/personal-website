@@ -1,6 +1,6 @@
 import { Tooltip } from "react-tooltip";
 import { NavLink } from "react-router-dom";
-import { getImageUrl } from "../../network/constant/api-urls.ts";
+import { getApiImageUrl } from "../../network/constant/api-urls.ts";
 import { LinkBoxData } from "../../data/api-data-types";
 
 interface LinkEntryProps {
@@ -25,7 +25,7 @@ function AppLinkBoxEntity({ link }: LinkEntryProps) {
           style={{ backgroundColor: link.backgroundColor }}
         >
           <img
-            src={getImageUrl(link.icon)}
+            src={getApiImageUrl(link.icon)}
             alt={link.label}
             className={"max-h-12 max-w-12"}
           />

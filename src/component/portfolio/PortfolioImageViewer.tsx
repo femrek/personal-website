@@ -4,7 +4,7 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
 import locKeys from "../../localization/locale-keys.ts";
-import { getImageUrl } from "../../network/constant/api-urls.ts";
+import { getApiImageUrl } from "../../network/constant/api-urls.ts";
 
 interface PortfolioImageViewerProps {
   imageUrls: string[];
@@ -85,7 +85,7 @@ function CurrentImage({ imageUrl }: { imageUrl: string }) {
           "object-contain overflow-hidden max-h-96",
           loading ? "hidden" : "visible",
         )}
-        src={getImageUrl(imageUrl)}
+        src={getApiImageUrl(imageUrl)}
         onLoad={onImageLoaded}
         alt={"Portfolio Image"}
       />

@@ -1,4 +1,4 @@
-import { getImageUrl } from "../../network/constant/api-urls.ts";
+import { getApiImageUrl } from "../../network/constant/api-urls.ts";
 
 interface AppCardProps {
   title: string;
@@ -13,7 +13,7 @@ interface AppCardProps {
  * of the widget will be 64, otherwise it will be the height of the text (max 6 lines).
  * @param props.title The title of the card.
  * @param props.description The description of the card. Shown in 6 lines max.
- * @param props.image The image URL of the card. This is optional. The url will be processed by {@link getImageUrl}
+ * @param props.image The image URL of the card. This is optional. The url will be processed by {@link getApiImageUrl}
  * function always.
  */
 function AppCard(props: AppCardProps) {
@@ -38,7 +38,7 @@ function AppCardFullSize({ title, image, description }: AppCardProps) {
       {image && (
         <img
           className={"aspect-square object-cover rounded-l-2xl size-64"}
-          src={getImageUrl(image)}
+          src={getApiImageUrl(image)}
           alt={"Preview Image"}
         />
       )}
@@ -60,7 +60,7 @@ function AppCardCompact({ title, image, description }: AppCardProps) {
         <div className={"w-full h-64 rounded-t-2xl bg-gray-700"}>
           <img
             className={"w-full h-64 rounded-t-2xl object-cover"}
-            src={getImageUrl(image)}
+            src={getApiImageUrl(image)}
             alt={"Preview Image"}
           />
         </div>

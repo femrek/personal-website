@@ -59,7 +59,7 @@ function getApiUrl(
  * have to be the full host (http://example.com)
  * @returns the final image URL with the full host anyway.
  */
-function getImageUrl(url: string, fullHost?: string): string {
+function getApiImageUrl(url: string, fullHost?: string): string {
   const isAbsoluteUrl = url.startsWith("http://") || url.startsWith("https://");
 
   if (fullHost !== undefined && isAbsoluteUrl) {
@@ -71,4 +71,4 @@ function getImageUrl(url: string, fullHost?: string): string {
   return `${apiUrlsHost}${url}`;
 }
 
-export { getApiUrl, getImageUrl, localizedApiUrlQueues, apiUrlsHost };
+export { getApiUrl, getApiImageUrl, localizedApiUrlQueues, apiUrlsHost };
