@@ -27,7 +27,7 @@ function AppLinkBoxEntity({ link }: LinkEntryProps) {
           <img
             src={getApiImageUrl(link.icon)}
             alt={link.label}
-            className={"max-h-12 max-w-12"}
+            className={"max-h-12 max-w-12 w-full h-full"}
           />
         </div>
       </NavLink>
