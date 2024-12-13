@@ -1,9 +1,11 @@
 import { getApiImageUrl } from "../../network/constant/api-urls.ts";
+import { Link } from "react-router-dom";
 
 interface AppCardProps {
   title: string;
   description: string;
   image?: string;
+  to?: string;
 }
 
 /**
@@ -15,6 +17,7 @@ interface AppCardProps {
  * @param props.description The description of the card. Shown in 6 lines max.
  * @param props.image The image URL of the card. This is optional. The url will be processed by {@link getApiImageUrl}
  * function always.
+ * @param props.to The URL to navigate to when the card is clicked. This is optional.
  */
 function AppCard(props: AppCardProps) {
   return (
@@ -30,8 +33,8 @@ function AppCard(props: AppCardProps) {
   );
 }
 
-function AppCardFullSize({ title, image, description }: AppCardProps) {
-  return (
+function AppCardFullSize({ title, image, description, to }: AppCardProps) {
+  const content = (
     <div
       className={"flex bg-black rounded-2xl mb-8 w-full shadow shadow-black"}
     >
@@ -51,10 +54,16 @@ function AppCardFullSize({ title, image, description }: AppCardProps) {
       </div>
     </div>
   );
+
+  return (
+    <div className={"w-full"}>
+      {to ? <Link to={to}>{content}</Link> : content}
+    </div>
+  );
 }
 
-function AppCardCompact({ title, image, description }: AppCardProps) {
-  return (
+function AppCardCompact({ title, image, description, to }: AppCardProps) {
+  const content = (
     <div className={"bg-black rounded-2xl mb-8 pb-4 shadow shadow-black"}>
       {image && (
         <div className={"w-full h-64 rounded-t-2xl bg-gray-700"}>
@@ -73,6 +82,8 @@ function AppCardCompact({ title, image, description }: AppCardProps) {
       </div>
     </div>
   );
+
+  return to ? <Link to={to}>{content}</Link> : content;
 }
 
 export default AppCard;
