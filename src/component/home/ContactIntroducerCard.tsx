@@ -1,5 +1,4 @@
 import AppCard from "../common/AppCard.tsx";
-import { Link } from "react-router-dom";
 import { HomePageContactIntroducerData } from "../../data/api-data-types";
 
 interface ContactIntroducerCardProps {
@@ -8,9 +7,11 @@ interface ContactIntroducerCardProps {
 
 function ContactIntroducerCard({ data }: ContactIntroducerCardProps) {
   return (
-    <Link to={"/contact"}>
-      <AppCard title={data.title} description={data.description} />
-    </Link>
+    <AppCard
+      title={data.title}
+      description={data.description}
+      to={"/contact"}
+    />
   );
 }
 
