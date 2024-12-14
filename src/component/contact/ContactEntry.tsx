@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useLocalizationContext } from "../../context/localization/localization-context.ts";
 import loc from "../../localization/localization-config.ts";
 import locKeys from "../../localization/locale-keys.ts";
+import copyToClipboard from "../../util/copy-to-clipboard.ts";
 
 interface ContactEntryProps {
   data: ContactEntryData;
@@ -16,7 +17,7 @@ function ContactEntry({ data }: ContactEntryProps) {
   // the function that copies the text to the clipboard. Shows a mark in the ui when the text is copied. after a while
   // the mark is removed.
   const onCopyClick = () => {
-    navigator.clipboard.writeText(data.value).then(() => {
+    copyToClipboard(data.value).then(() => {
       setIsCopied(true);
       const timer = setTimeout(() => {
         setIsCopied(false);
