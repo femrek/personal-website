@@ -76,13 +76,17 @@ Example `.env.developement.local` file for `npm run dev` or `.env.production.loc
 ```
 VITE_WEBSITE_API_HOST=http://localhost:3000
 VITE_WEBSITE_TITLE=Title
+VITE_WEBSITE_INDEX_HEADER='
+    <meta name="keywords" content="portfolio">
+'
 ```
 
 Or, you can set the environment variables in the terminal before running the app. (With no VITE_ prefix)
 
 ```bash
-WEBSITE_API_HOST=http://localhost:3000 
-WEBSITE_TITLE=Title
+WEBSITE_API_HOST="http://localhost:3000" \
+WEBSITE_TITLE="Title" \
+WEBSITE_INDEX_HEADER="<meta name="keywords" content="portfolio">" \
 npm run dev
 ```
 
